@@ -1,10 +1,11 @@
 import React from 'react'
-
+import { menu } from '../constant/page'
+import Link from 'next/link'
 
 const menuItems =[
   {
     id:'1',
-    name:'hotcofee',
+    name:'hot coffee',
   },
   {
     id:'2',
@@ -34,11 +35,12 @@ const menuItems =[
 
 const page = () => {
   return (
-    <div className='slide-up max-w-2xl min-h-screen text-center mx-auto'>
-      <p className='py-6 text-white text-2xl bg-primary-500'>What are you in the mood for?</p>
-      <div className='flex flex-col gap-4 my-4 uppercase text-2xl font-medium'>
-        {menuItems.map((items)=>(
-        <p className='hover:bg-gray-100 py-4'>{items.name}</p>
+    
+    <div className='max-w-2xl min-h-screen text-center mx-auto'>
+      <p className='h-[100px] flex justify-center items-center text-white text-2xl bg-primary-500'>What are you in the mood for?</p>
+      <div className='slide-up flex flex-col gap-4 my-4 uppercase text-2xl font-medium'>
+        {menu.map((data)=>(
+        <Link href={`category/${data.id}`} className='hover:bg-gray-100 py-4'>{data.name}</Link>
         ))}
       </div>
     </div>
