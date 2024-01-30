@@ -1,6 +1,4 @@
-import { lovelight } from "next/font/google";
 import "./globals.css";
-// @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
 
 // const inter = Inter({ subsets: ["latin"] });
 

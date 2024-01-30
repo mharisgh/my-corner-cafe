@@ -1,11 +1,20 @@
+import { Love_Light } from "next/font/google";
+import Link from "next/link";
 
+const loveLight = Love_Light({
+  weight: '400',
+
+  subsets: ['latin']
+})
 
 export default function Home() {
   return (
-    <main className="max-w-2xl bg-red-800 flex flex-col justify-center items-center mx-auto">
-      <img className="max-w-[200px]" src="/images/logo-mycorner.png" alt="logo" />
+    <main className="slide-up max-w-2xl min-h-screen  flex flex-col mx-auto justify-center items-center gap-4">
+      <img className="max-w-[200px]  " src="/images/logo-mycorner.png" alt="logo" />
       <img className="max-w-[400px]" src="/images/menu-bg.webp" alt="menu" />
-      <h1 className="font-family">Menu</h1>
+      <Link href='/items-details' className="text-5xl hover:text-[#3e2f25]">
+        <h1 className={loveLight.className}>Menu</h1>
+      </Link>
     </main>
   );
 }
