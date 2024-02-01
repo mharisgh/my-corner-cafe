@@ -25,7 +25,7 @@ const page = ({ params }) => {
     <div className='bg-[#3e2f25]/20 w-full h-full'>
 
 
-      <div className='max-w-2xl mx-auto bg-white'>
+      <div className='max-w-2xl mx-auto pb-10 bg-white'>
         <div className='max-w-2xl fixed z-[10] bg-[#3e2f25] w-full text-white'>
           <div className='flex items-center  pr-4 md:px-4'>
             <Link href='/category' className='p-2 '>

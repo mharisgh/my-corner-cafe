@@ -1,64 +1,211 @@
-// 'use client'
-
 export const menu = [
   {
     id: 0,
-    categoryName: 'Appetizer',
-    slug: 'appetizer',
-    itemsList:
-      [
-        {
-          id: 0,
-          img: '/images/appetizer/app1.jpeg',
-          itemName: 'milk shake',
-          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
-          price: '2144',
-        },
-        {
-          id: 1,
-          img: '/images/appetizer/app2.jpeg',
-          itemName: 'sharjah shake',
-          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
-          price: '44',
-        },
-        {
-          id: 2,
-          img: '/images/appetizer/md-portrait.jpg',
-          itemName: 'chocolate shake',
-          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
-          price: '7465',
-        },
-      ],
-  },
-  {
-    id: 1,
     categoryName: 'Hot Coffee',
     slug: 'hotcoffee',
     itemsList:
       [
         {
           id: 0,
-          img: '/images/appetizer/md-portrait.jpg',
-          itemName: 'Hot Tea',
+          img: '/images/hotcoffee/spanishlatte.jpeg',
+          itemName: 'Spanish Latte',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
-          price: '75',
+          price: '26',
         },
         {
           id: 1,
-          img: '/images/appetizer/md-portrait.jpg',
-          itemName: 'Hot Gava',
+          img: '/images/hotcoffee/americano.webp',
+          itemName: 'Americano',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
-          price: '75',
+          price: '16',
         },
         {
           id: 2,
-          img: '/images/appetizer/md-portrait.jpg',
-          itemName: 'Hot Milk',
+          img: '/images/hotcoffee/Cafe Latte.webp',
+          itemName: 'Coffe Latte',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
-          price: '75',
+          price: '24',
+        },
+        {
+          id: 3,
+          img: '/images/hotcoffee/Flat White.webp',
+          itemName: 'Flat White',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '23',
+        },
+        {
+          id: 4,
+          img: '/images/hotcoffee/espresso.webp',
+          itemName: 'Espresso',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '16',
+        },
+        {
+          id: 5,
+          img: '/images/hotcoffee/cortado.webp',
+          itemName: 'Cortado',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '22',
+        },
+        {
+          id: 6,
+          img: '/images/hotcoffee/chemex.jpeg',
+          itemName: 'Chemex',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '27',
+        },
+        {
+          id: 7,
+          img: '/images/placeholder.png',
+          itemName: 'French Press',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '26',
+        },
+        {
+          id: 8,
+          img: '/images/placeholder.png',
+          itemName: 'Pistachio Latte',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '30',
+        },
+        {
+          id: 9,
+          img: '/images/hotcoffee/caramel latte.webp',
+          itemName: 'Caramel Latte',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '26',
+        },
+        {
+          id: 10,
+          img: '/images/hotcoffee/Affogato.webp',
+          itemName: 'Afoqatto',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '28',
+        },
+        {
+          id: 11,
+          img: '/images/placeholder.png',
+          itemName: 'Hot Chocolate',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '25',
+        },
+        {
+          id: 12,
+          img: '/images/hotcoffee/v60.jpeg',
+          itemName: 'V60',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '27',
+        },
+        {
+          id: 13,
+          img: '/images/placeholder.png',
+          itemName: 'Single Espresso',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '14',
         },
       ],
   },
+
+  {
+    id: 1,
+    categoryName: 'Iced Coffee',
+    slug: 'icedcoffee',
+    itemsList:
+      [
+        {
+          id: 0,
+          img: '/images/icedcoffee/icedv60.jpeg',
+          itemName: 'Iced V60',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '26',
+        },
+        {
+          id: 1,
+          img: '/images/icedcoffee/Ice Americano.webp',
+          itemName: 'Iced Americano',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '22',
+        },
+        {
+          id: 2,
+          img: '/images/icedcoffee/Ice Latte.webp',
+          itemName: 'Iced Latte',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '24',
+        },
+        {
+          id: 3,
+          img: '/images/icedcoffee/Ice Cappucino.webp',
+          itemName: 'Iced Cappuccino',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '24',
+        },
+        {
+          id: 4,
+          img: '/images/icedcoffee/Iced Flat White.webp',
+          itemName: 'Iced Flat White',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '23',
+        },
+        {
+          id: 5,
+          img: '/images/icedcoffee/Ice Spanish Latte.webp',
+          itemName: 'Iced Spanish Latte',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '26',
+        },
+        {
+          id: 6,
+          img: '/images/icedcoffee/Ice Matcha Latte.webp',
+          itemName: 'Iced Mocha Latte',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '24',
+        },
+        {
+          id: 7,
+          img: '/images/placeholder.png',
+          itemName: 'Iced Pistachio Latte',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '30',
+        },
+        {
+          id: 8,
+          img: '/images/icedcoffee/signature latte.webp',
+          itemName: 'Signature Latte',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '28',
+        },
+        {
+          id: 9,
+          img: '/images/icedcoffee/Ice Matcha Latte.webp',
+          itemName: 'Iced Matcha Latte',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '30',
+        },
+        {
+          id: 10,
+          img: '/images/placeholder.png',
+          itemName: 'My Corner Blend Cold Brew',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '28',
+        },
+        {
+          id: 11,
+          img: '/images/icedcoffee/icedchemex.jpeg',
+          itemName: 'Iced Chemex',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '27',
+        },
+        {
+          id: 12,
+          img: '/images/placeholder.png',
+          itemName: 'Iced Chocolate',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '26',
+        },
+      ],
+  },
+
   {
     id: 2,
     categoryName: 'Shakes',
@@ -67,89 +214,215 @@ export const menu = [
       [
         {
           id: 0,
-          img: '/images/appetizer/app1.jpeg',
-          itemName: 'milk shake',
+          img: '/images/placeholder.png',
+          itemName: 'Strawberry Milkshake',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
-          price: '2144',
+          price: '22',
         },
         {
           id: 1,
-          img: '/images/appetizer/app2.jpeg',
-          itemName: 'sharjah shake',
+          img: '/images/placeholder.png',
+          itemName: 'Chocolate milkshake',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
-          price: '44',
+          price: '25',
         },
         {
           id: 2,
-          img: '/images/appetizer/md-portrait.jpg',
-          itemName: 'chocolate shake',
+          img: '/images/placeholder.png',
+          itemName: 'Blue Velvet',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
-          price: '7465',
+          price: '25',
+        },
+        {
+          id: 3,
+          img: '/images/placeholder.png',
+          itemName: 'White Chocolate Chip',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '25',
+        },
+        {
+          id: 4,
+          img: '/images/placeholder.png',
+          itemName: 'Coffe Caramel Frappe',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '28',
+        },
+        {
+          id: 5,
+          img: '/images/placeholder.png',
+          itemName: 'Mocha Frappe',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '28',
+        },
+        {
+          id: 6,
+          img: '/images/placeholder.png',
+          itemName: 'Chocolate Frappe',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '28',
         },
       ],
   },
 
-  // {
-  //   'id': 'icedcoffee',
-  //   'name': 'Iced Coffee',
-  //   'list':
-  //     [
-  //       {
-  //         "id": '1',
-  //         'img': '#',
-  //         'itemName': 'Gaavaa',
-  //         'itemDescription': 'lorem ipsum etxt dummy dolar sit.',
-  //         'price': '75',
-  //       },
-  //       {
-  //         "id": '2',
-  //         'img': '#',
-  //         'itemName': 'whole wheat Cake',
-  //         'itemDescription': 'lorem ipsum etxt dummy dolar sit.',
-  //         'price': '75',
-  //       },
-  //       {
-  //         "id": '3',
-  //         'img': '#',
-  //         'itemName': 'molten lava dulce',
-  //         'itemDescription': 'lorem ipsum etxt dummy dolar sit.',
-  //         'price': '75',
-  //       },
-  //     ],
-  // },
+  {
+    id: 3,
+    categoryName: 'Hot Tea',
+    slug: 'hottea',
+    itemsList:
+      [
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Green Tea',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '20',
+        },
+        {
+          id: 1,
+          img: '/images/placeholder.png',
+          itemName: 'Red Tea',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '20',
+        },
+        {
+          id: 2,
+          img: '/images/placeholder.png',
+          itemName: 'Matcha Tea',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '30',
+        },
+      ],
+  },
 
+  {
+    id: 4,
+    categoryName: 'Dessert',
+    slug: 'dessert',
+    itemsList:
+      [
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Dessert Item',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '40',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Dessert Item',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '40',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Dessert Item',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '40',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Dessert Item',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '40',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Dessert Item',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '40',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Dessert Item',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '40',
+        },
+      ],
+  },
+
+  {
+    id: 5,
+    categoryName: 'Appetizers',
+    slug: 'appetizers',
+    itemsList:
+      [
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Appetizers 1',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '45',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Appetizers 1',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '45',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Appetizers 1',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '45',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Appetizers 1',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '45',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Appetizers 1',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '45',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Appetizers 1',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '45',
+        },
+      ],
+  },
+
+  {
+    id: 6,
+    categoryName: 'Water',
+    slug: 'water',
+    itemsList:
+      [
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Water',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '12',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Water',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '12',
+        },
+        {
+          id: 0,
+          img: '/images/placeholder.png',
+          itemName: 'Water',
+          itemDescription: 'lorem ipsum etxt dummy dolar sit.',
+          price: '12',
+        },
+      ],
+  },
 ]
-
-
-// {
-//   id: 0,
-//   slug: 'shakes',
-//   name: 'sharjah shake',
-//   category: 'shakes'
-// },
-// {
-//   id: 1,
-//   slug: 'shakes',
-//   name: 'mango shake',
-//   category: 'shakes'
-// },
-// {
-//   id: 2,
-//   slug: 'hotcoffee',
-//   name: 'Hot gava',
-//   category: 'hotcoffee'
-// },
-// {
-//   id: 3,
-//   slug: 'hotcoffee',
-//   name: 'Ginger chai',
-//   category: 'hotcoffee'
-// },
-// {
-//   id: 4,
-//   slug: 'shakes',
-//   name: 'milk shake',
-//   category: 'shakes'
-// },
-
-
