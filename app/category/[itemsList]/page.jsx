@@ -29,10 +29,10 @@ const page = ({ params }) => {
         <div className='max-w-2xl fixed z-[10] bg-[#3e2f25] w-full text-white'>
           <div className='flex items-center  pr-4 md:px-4'>
             <Link href='/category' className='p-2 '>
-              <svg className='text-white fill-white w-[44px] h-[44px]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+              <svg className='fill-white w-[44px] h-[44px] bg-white/5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
             </Link>
             {category.map((name)=>(
-            <h1 className='text-3xl font-semibold uppercase -mt-1'>{name.categoryName}</h1>
+            <h1 className='text-3xl font-semibold uppercase'>{name.categoryName}</h1>
             ))}
           </div>
           <ul className='flex gap-10 uppercase font-semibold bg-green-400 overflow-scroll scrollbar-hide'>
