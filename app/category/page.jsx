@@ -35,8 +35,7 @@ const menuItems =[
 
 const page = () => {
   return (
-    
-    <div className='max-w-2xl min-h-screen text-center mx-auto'>
+    <div className='max-w-2xl text-center mx-auto'>
       <p className='h-[100px] flex justify-center items-center text-white text-2xl bg-primary-500'>What are you in the mood for?</p>
       <div className='slide-up flex flex-col gap-4 my-4 uppercase text-2xl font-medium'>
         {menu.map((data)=>(
