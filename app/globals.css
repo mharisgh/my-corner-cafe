@@ -40,3 +40,12 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* Add this style to center the highlighted item */
+.highlighted {
+  /* justify-content: center; Horizontally center the item */
+  transform: translateX(-50%); /* Adjust if needed based on your design */
+  /* margin-left: -50%; */
+  /* Add other styles for highlighting, like underline or different color */
+  text-decoration: underline;
+}

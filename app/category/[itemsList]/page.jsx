@@ -47,15 +47,18 @@ const page = ({ params }) => {
 
         <div className='w-full overflow-hidden '>
           <ul className='flex py-4 px-4 gap-6 uppercase w-full font-semibold overflow-scroll scrollbar-hide'>
-            
+
             {menu.map((category, id) => (
               <li
-                onClick={() => handleItemClick('shakes')}
+                onClick={() => handleItemClick('category.slug')}
                 style={{ textDecoration: category.slug === params.itemsList ? 'underline' : 'none', }}
-                className='flex gap-2 items-center '><Link className='whitespace-nowrap cursor-pointer   flex flex-nowrap' href={`${category.slug}`}>{category.categoryName}</Link><img className='w-[10px]' src="/images/tab-flower.png" alt="icon" /></li>
+                className={`flex gap-2 items-center`}>
+                <Link className='whitespace-nowrap cursor-pointer  flex flex-nowrap' href={`${category.slug}`}>{category.categoryName}</Link>
+                <img className='w-[10px]' src="/images/tab-flower.png" alt="icon" />
+               </li>
             ))}
 
-            {/* <li
+          {/* <li
               onClick={() => handleItemClick('hotcoffee')}
               style={{ textDecoration: pageCategory === 'hotcoffee' ? 'underline' : 'none', }}
               className='flex gap-2 items-center '>
@@ -111,33 +114,33 @@ const page = ({ params }) => {
               <img className='w-[10px]' src="/images/tab-flower.png" alt="icon" />
             </li> */}
 
-          </ul>
-        </div>
-
+        </ul>
       </div>
 
-      <ul className='px-4 md:px-8 place-items-center md:place-items-start grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-[140px]'>
-
-        {itemsList[0].map((data, id) => (
-          <li key={id} >
-            <div className='relative w-full min-w-[280px] '>
-              <p className='absolute -top-3 -right-3 font-bold uppercase text-lg bg-[#d9d9d9] px-3  h-[70px] flex justify-center items-center rounded-full border-[3px] border-[#3e2f25]'>{data.price}<span className='text-xs font-semibold'>&nbsp;qr</span></p>
-              <img className='w-[100vw] max-h-[180px] object-cover rounded-xl overflow-hidden' src={data.img} alt="item" />
-            </div>
-            <div className={josefinSans.className}>
-              <p className='capitalize text-xl mt-2'>{data.itemName}</p>
-            </div>
-            <div className={josefinSans.className}>
-              <p>{data.itemDescription}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
-
-
-
     </div>
+
+    <ul className='px-4 md:px-8 place-items-center md:place-items-start grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-[140px]'>
+
+      {itemsList[0].map((data, id) => (
+        <li key={id} >
+          <div className='relative w-full min-w-[280px] '>
+            <p className='absolute -top-3 -right-3 font-bold uppercase text-lg bg-[#d9d9d9] px-3  h-[70px] flex justify-center items-center rounded-full border-[3px] border-[#3e2f25]'>{data.price}<span className='text-xs font-semibold'>&nbsp;qr</span></p>
+            <img className='w-[100vw] max-h-[180px] object-cover rounded-xl overflow-hidden' src={data.img} alt="item" />
+          </div>
+          <div className={josefinSans.className}>
+            <p className='capitalize text-xl mt-2'>{data.itemName}</p>
+          </div>
+          <div className={josefinSans.className}>
+            <p>{data.itemDescription}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+
+
+
   </div>
+  </div >
   )
 
 }
