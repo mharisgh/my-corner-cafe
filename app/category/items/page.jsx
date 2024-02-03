@@ -60,7 +60,7 @@ const CategoryTabs = ({ activeCategory, onTabClick }) => {
 };
 
 const CategoryItems = ({ activeCategory }) => {
-  const selectedCategory = menu.find((category) => category.categoryName === activeCategory);
+  const selectedCategory = menu.find((category) => category.categoryName === activeCategory || 'Hot Coffee');
 
   return (
     <ul className='px-4 md:px-8 place-items-center md:place-items-start grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-[140px]'>
@@ -87,7 +87,13 @@ const CategoryItems = ({ activeCategory }) => {
 
 const App = () => {
 
-  const [activeCategory, setActiveCategory] = useState(localStorage.getItem('selectedCategory'));
+  // const [activeCategory, setActiveCategory] = useState(localStorage.getItem('selectedCategory'));
+
+  const [activeCategory, setActiveCategory] = useState()
+  useEffect(() => {
+    setActiveCategory(localStorage.getItem('selectedCategory'))
+  }, [])
+
 
   const handleTabClick = (category) => {
     setActiveCategory(category);
