@@ -416,7 +416,7 @@ export const menu = [
         },
         {
           id: 0,
-          img: '/images/appetizer/ceasar Salad.webp',
+          img: '/images/appetizer/ceasar salad.webp',
           itemName: 'ceasar salad',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
           price: '45',
