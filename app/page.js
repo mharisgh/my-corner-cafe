@@ -1,3 +1,4 @@
+'use client'
 import { Love_Light } from "next/font/google";
 import Link from "next/link";
 
