@@ -3,37 +3,6 @@ import React, { useState } from 'react'
 import { menu } from '../constant/data'
 import Link from 'next/link'
 
-const menuItems = [
-  {
-    id: '1',
-    name: 'hot coffee',
-  },
-  {
-    id: '2',
-    name: 'Iced coffee',
-  },
-  {
-    id: '3',
-    name: 'shakes',
-  },
-  {
-    id: '4',
-    name: 'hot tea',
-  },
-  {
-    id: '5',
-    name: 'dessert',
-  },
-  {
-    id: '6',
-    name: 'appetizers',
-  },
-  {
-    id: '7',
-    name: 'water',
-  },
-]
-const categories = ['Fruits', 'Vegetables', 'Pulses', 'Hot Tea', 'Dessert'];
 
 const page = () => {
   const [selectedCategory, setSelectedCategory] = useState(localStorage.getItem('selectedCategory') || categories[0]);
