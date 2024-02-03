@@ -1,16 +1,11 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { menu } from '../constant/data'
 import Link from 'next/link'
 
 
 const page = () => {
-  const [selectedCategory, setSelectedCategory] = useState
-  
-//   useEffect(() => {
-//     setSelectedCategory(localStorage.getItem('selectedCategory') || categories[0]);
-// }, [])
-
+  const [selectedCategory, setSelectedCategory] = useState('null');
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
