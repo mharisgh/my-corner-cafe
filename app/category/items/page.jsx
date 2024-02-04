@@ -11,6 +11,12 @@ const josefinSans = Josefin_Sans({
 
 const CategoryTabs = ({ activeCategory, onTabClick }) => {
 
+  const [active, setActive] = useState('null')
+  const handleClick = (name) => {
+    setActive(name)
+  }
+
+
   return (
     <div className='max-w-2xl fixed z-[10] bg-[#3e2f25] w-full text-white'>
 
@@ -25,19 +31,20 @@ const CategoryTabs = ({ activeCategory, onTabClick }) => {
 
 
 
-      {/* <div className='bg-green-800 relative py-10  overflow-scroll scrollbar-hide'>
-        <ul className='flex w-full absolute z-100 top-0 overflow-hidden  font-light bg-red-800 gap-10'
+      {/* <div className='bg-green-800 relative py-10   scrollbar-hide'>
+        <ul className='group flex w-full absolute z-100 top-0 overflow-scroll  font-light bg-red-800 gap-10'
         >
-          <li>test 1</li>
+          <li className='group-hover:bg-blue-800'>test 1</li>
           <li>teffst 1</li>
           <li>tesssst 1</li>
           <li>tesffffft 1</li>
           <li>teffst 1</li>
           <li>tesssst 1</li>
           <li>test 1</li>
-          <li className='text-center font-bold'>test 123</li>
-          <li>teffst 1</li>
-          <li>tesssst 1</li>
+          <li onClick={(e) => handleClick('Shakes')} className={`${active === 'Shakes' ? 'font-bold underline': ''} cursor-pointer`}>Shakes</li>
+          <li onClick={(e) => handleClick('Dessert')} className={`${active === 'Dessert' ? 'font-bold underline': ''} cursor-pointer`}>Dessert</li>
+          <li onClick={(e) => handleClick('Red')} className={`${active === 'Red' ? 'font-bold underline': ''} cursor-pointer`}>Red</li>
+          
         </ul>
       </div> */}
 
@@ -53,7 +60,7 @@ const CategoryTabs = ({ activeCategory, onTabClick }) => {
                 key={id}
                 onClick={() => onTabClick(category.categoryName)}
                 className={`flex gap-2 items-center ${activeCategory === category.categoryName ? 'font-bold underline' : ''} transition-transform duration-300 transform}`}>
-                  
+
                 <div className='whitespace-nowrap cursor-pointer  flex flex-nowrap'>{category.categoryName}</div>
                 <img className='w-[10px]' src="/images/tab-flower.png" alt="icon" />
               </li>
