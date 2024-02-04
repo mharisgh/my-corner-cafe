@@ -49,3 +49,8 @@
   /* Add other styles for highlighting, like underline or different color */
   text-decoration: underline;
 }
+
+.move-center{
+  transform: translateX(-50%); /* Adjust if needed based on your design */
+  background-color: yellow;
+}

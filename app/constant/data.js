@@ -446,21 +446,21 @@ export const menu = [
       [
         {
           id: 0,
-          img: '/images/water/pana250.jpeg',
+          img: '/images/water/pana250.webp',
           itemName: 'Acqua pana 250ml',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
           price: '12',
         },
         {
           id: 0,
-          img: '/images/water/sparkling.jpeg',
+          img: '/images/water/sparkling.webp',
           itemName: 'Sparkling Water',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
           price: '15',
         },
         {
           id: 0,
-          img: '/images/water/pana500.jpeg',
+          img: '/images/water/pana500.webp',
           itemName: 'Acqua pana 500ml',
           itemDescription: 'lorem ipsum etxt dummy dolar sit.',
           price: '20',

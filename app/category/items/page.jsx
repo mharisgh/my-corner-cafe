@@ -12,20 +12,6 @@ const josefinSans = Josefin_Sans({
 const CategoryTabs = ({ activeCategory, onTabClick }) => {
 
   return (
-    // <div className="flex">
-    //   {menu.map((category) => (
-    //     <div
-    //       key={category.id}
-    //       className={`cursor-pointer mr-4 py-2 ${activeCategory === category.categoryName ? 'font-bold underline' : ''
-    //         }`}
-    //       onClick={() => onTabClick(category.categoryName)}
-    //     >
-    //       {category.categoryName}
-    //     </div>
-    //   ))}
-
-    // </div>
-
     <div className='max-w-2xl fixed z-[10] bg-[#3e2f25] w-full text-white'>
 
       {/* heading text & back btn */}
@@ -37,20 +23,43 @@ const CategoryTabs = ({ activeCategory, onTabClick }) => {
         </Link>
       </div>
 
+
+
+      {/* <div className='bg-green-800 relative py-10  overflow-scroll scrollbar-hide'>
+        <ul className='flex w-full absolute z-100 top-0 overflow-hidden  font-light bg-red-800 gap-10'
+        >
+          <li>test 1</li>
+          <li>teffst 1</li>
+          <li>tesssst 1</li>
+          <li>tesffffft 1</li>
+          <li>teffst 1</li>
+          <li>tesssst 1</li>
+          <li>test 1</li>
+          <li className='text-center font-bold'>test 123</li>
+          <li>teffst 1</li>
+          <li>tesssst 1</li>
+        </ul>
+      </div> */}
+
+
       {/* tabs list */}
       <div className='w-full overflow-hidden '>
-        <ul className='flex py-4 px-4 gap-6 uppercase w-full font-semibold overflow-scroll scrollbar-hide'>
+        <div className='flex py-4 px-4 gap-6 uppercase w-full font-semibold overflow-scroll scrollbar-hide'>
+
 
           {menu.map((category, id) => (
-            <li
-              key={id}
-              onClick={() => onTabClick(category.categoryName)}
-              className={`flex gap-2 items-center ${activeCategory === category.categoryName ? 'font-bold underline' : ''} `}>
-              <div className='whitespace-nowrap cursor-pointer  flex flex-nowrap'>{category.categoryName}</div>
-              <img className='w-[10px]' src="/images/tab-flower.png" alt="icon" />
-            </li>
+            <ul className='group'>
+              <li
+                key={id}
+                onClick={() => onTabClick(category.categoryName)}
+                className={`flex gap-2 items-center ${activeCategory === category.categoryName ? 'font-bold underline' : ''} transition-transform duration-300 transform}`}>
+                  
+                <div className='whitespace-nowrap cursor-pointer  flex flex-nowrap'>{category.categoryName}</div>
+                <img className='w-[10px]' src="/images/tab-flower.png" alt="icon" />
+              </li>
+            </ul>
           ))}
-        </ul>
+        </div>
       </div>
 
     </div>
@@ -69,14 +78,14 @@ const CategoryItems = ({ activeCategory }) => {
         <li key={id} >
           <div className='relative w-full min-w-[280px] '>
             <p className='absolute -top-3 -right-3 font-bold uppercase text-lg bg-[#d9d9d9] px-3  h-[70px] flex justify-center items-center rounded-full border-[3px] border-[#3e2f25]'>{data.price}<span className='text-xs font-semibold'>&nbsp;qr</span></p>
-            <img className='w-[100vw] max-h-[180px] object-cover rounded-xl overflow-hidden' src={data.img} alt="item" />
+            <img className='w-[100vw] max-h-[200px] object-cover rounded-3xl overflow-hidden' src={data.img} alt="item" />
           </div>
           <div className={josefinSans.className}>
             <p className='capitalize text-xl mt-2'>{data.itemName}</p>
           </div>
-          <div className={josefinSans.className}>
+          {/* <div className={josefinSans.className}>
             <p>{data.itemDescription}</p>
-          </div>
+          </div> */}
         </li>
       ))}
 
